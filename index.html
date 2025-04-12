@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Pages 知識樹狀圖</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { text-align: center; }
+        .tree { margin-left: 20px; }
+        .tree ul { list-style-type: none; padding-left: 20px; }
+        .tree li { margin: 5px 0; }
+        .tree .level-1 { font-weight: bold; font-size: 1.2em; }
+        .tree .level-2 { font-weight: bold; }
+        .tree .level-3 { color: #555; }
+    </style>
+</head>
+<body>
+    <h1>GitHub Pages 知識樹狀圖</h1>
+    <div class="tree">
+        <ul>
+            <li class="level-1">1. 基本概念
+                <ul>
+                    <li class="level-2">1.1 什麼是GitHub Pages？
+                        <ul>
+                            <li class="level-3">1.1.1 定義：GitHub提供的免費靜態網頁託管服務</li>
+                            <li class="level-3">1.1.2 用途：展示個人網頁、項目DEMO（如地圖分佈）</li>
+                            <li class="level-3">1.1.3 特點
+                                <ul>
+                                    <li class="level-3">免費（公開倉庫）</li>
+                                    <li class="level-3">支援HTML/CSS/JS</li>
+                                    <li class="level-3">自動託管於username.github.io</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level-2">1.2 限制
+                        <ul>
+                            <li class="level-3">1.2.1 僅限靜態內容（無後端程式，如PHP）</li>
+                            <li class="level-3">1.2.2 流量限制（每月100GB）</li>
+                            <li class="level-3">1.2.3 檔案大小限制（每個檔案&lt;100MB）</li>
+                        </ul>
+                    </li>
+                    <li class="level-2">1.3 與GitHub的關係
+                        <ul>
+                            <li class="level-3">1.3.1 基於GitHub倉庫</li>
+                            <li class="level-3">1.3.2 公開倉庫免費，私有需付費</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="level-1">2. 前置準備
+                <ul>
+                    <li class="level-2">2.1 帳戶需求
+                        <ul>
+                            <li class="level-3">2.1.1 GitHub帳戶（註冊於github.com）</li>
+                            <li class="level-3">2.1.2 驗證Email（啟用Pages功能）</li>
+                        </ul>
+                    </li>
+                    <li class="level-2">2.2 工具準備
+                        <ul>
+                            <li class="level-3">2.2.1 瀏覽器（Chrome、Firefox）</li>
+                            <li class="level-3">2.2.2 文字編輯器（Notepad++、VS Code）</li>
+                            <li class="level-3">2.2.3 可選：Git（命令列上傳）</li>
+                        </ul>
+                    </li>
+                    <li class="level-2">2.3 檔案準備
+                        <ul>
+                            <li class="level-3">2.3.1 HTML檔案（如leaflet_map.html）</li>
+                            <li class="level-3">2.3.2 支援檔案（CSS、JS，若有）</li>
+                            <li class="level-3">2.3.3 確認檔案可本地運行</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="level-1">3. 操作流程
+                <ul>
+                    <li class="level-2">3.1 創建倉庫
+                        <ul>
+                            <li class="level-3">3.1.1 命名規則：username.github.io</li>
+                            <li class="level-3">3.1.2 設定公開（Public）</li>
+                            <li class="level-3">3.1.3 初始化README（可選）</li>
+                        </ul>
+                    </li>
+                    <li class="level-2">3.2 上傳檔案
+                        <ul>
+                            <li class="level-3">3.2.1 方法1：網頁拖曳
+                                <ul>
+                                    <li class="level-3">前往倉庫頁面</li>
+                                    <li class="level-3">拖曳leaflet_map.html</li>
+                                    <li class="level-3">提交（Commit）更改</li>
+                                </ul>
+                            </li>
+                            <li class="level-3">3.2.2 方法2：Git命令
+                                <ul>
+                                    <li class="level-3">安裝Git</li>
+                                    <li class="level-3">複製倉庫（git clone）</li>
+                                    <li class="level-3">新增檔案（git add）</li>
+                                    <li class="level-3">提交（git commit）</li>
+                                    <li class="level-3">推送（git push）</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="level-2">3.3 啟用GitHub Pages
+                        <ul>
+                            <li class="level-3">3.3.1 進入Settings &gt; Pages</li>
+                            <li class="level-3">3.3.2 選擇Branch（main）</li>
+                            <li class="level-3">3.3.3 儲存，等待部署（1-2分鐘）</li>
+                        </ul>
+                    </li>
+                    <li class="level-2">3.4 訪問網頁
+                        <ul>
+                            <li class="level-3">3.4.1 網址：https://username.github.io/leaflet_map.html</li>
+                            <li class="level-3">3.4.2 確認地圖顯示（25個標記，212台）</li>
+                            <li class="level-3">3.4.3 分享網址</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="level-1">4. 進階應用
+                <ul>
+                    <li class="level-2">4.1 更新DEMO
+                        <ul>
+                            <li class="level-3">4.1.1 修改HTML（例如新增標記）</li>
+                            <li class="level-3">4.1.2 重新上傳</li>
+                            <li class="level-3">4.1.3 自動更新（5-10分鐘生效）</li>
+                        </ul>
+                    </li>
+                    <li class="level-2">4.2 自訂域名
+                        <ul>
+                            <li class="level-3">4.2.1 購買域名（例如yourdomain.com）</li>
+                            <li class="level-3">4.2.2 設定DNS（指向GitHub IP）</li>
+                            <li class="level-3">4.2.3 Pages設定中輸入域名</li>
+                        </ul>
+                    </li>
+                    <li class="level-2">4.3 隱私管理
+                        <ul>
+                            <li class="level-3">4.3.1 公開倉庫：所有人可見</li>
+                            <li class="level-3">4.3.2 私有倉庫：需GitHub Pro</li>
+                            <li class="level-3">4.3.3 密碼保護（自訂JS）</li>
+                        </ul>
+                    </li>
+                    <li class="level-2">4.4 整合其他工具
+                        <ul>
+                            <li class="level-3">4.4.1 與地圖DEMO結合（Leaflet/Plotly）</li>
+                            <li class="level-3">4.4.2 添加心智圖（D3.js展示）</li>
+                            <li class="level-3">4.4.3 分析流量（Google Analytics）</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="level-1">5. 常見問題
+                <ul>
+                    <li class="level-2">5.1 網頁不顯示
+                        <ul>
+                            <li class="level-3">5.1.1 檢查網址（是否包含.html）</li>
+                            <li class="level-3">5.1.2 確認Pages已啟用</li>
+                            <li class="level-3">5.1.3 等待部署（可能延遲）</li>
+                        </ul>
+                    </li>
+                    <li class="level-2">5.2 地圖載入失敗
+                        <ul>
+                            <li class="level-3">5.2.1 檢查網路（Leaflet需連線）</li>
+                            <li class="level-3">5.2.2 驗證JS路徑（unpkg.com）</li>
+                            <li class="level-3">5.2.3 本地測試HTML</li>
+                        </ul>
+                    </li>
+                    <li class="level-2">5.3 檔案上傳錯誤
+                        <ul>
+                            <li class="level-3">5.3.1 確認檔案大小（&lt;100MB）</li>
+                            <li class="level-3">5.3.2 檢查Git提交（無衝突）</li>
+                            <li class="level-3">5.3.3 重新上傳</li>
+                        </ul>
+                    </li>
+                    <li class="level-2">5.4 其他問題
+                        <ul>
+                            <li class="level-3">5.4.1 流量超限（升級計劃）</li>
+                            <li class="level-3">5.4.2 瀏覽器相容性（測試Chrome）</li>
+                            <li class="level-3">5.4.3 聯繫支援（GitHub Help）</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
